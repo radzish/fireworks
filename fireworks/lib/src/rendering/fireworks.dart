@@ -129,10 +129,10 @@ class RenderFireworks extends RenderBox {
       ..clipRect(offset & size)
       ..translate(offset.dx, offset.dy);
 
-    _drawBackground(canvas);
+    // _drawBackground(canvas);
     _drawFireworks(canvas);
-    _drawTitle(canvas);
-    _drawStars(canvas);
+    // _drawTitle(canvas);
+    // _drawStars(canvas);
 
     canvas.restore();
   }
@@ -178,7 +178,7 @@ class RenderFireworks extends RenderBox {
           ..color = HSVColor.fromAHSV(
                   particle.alpha, particle.hue % 360, 1, particle.brightness)
               .toColor()
-          ..blendMode = BlendMode.screen
+          // ..blendMode = BlendMode.screen
           ..strokeWidth = particle.size
           ..style = PaintingStyle.stroke,
       );
